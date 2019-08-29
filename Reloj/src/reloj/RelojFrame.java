@@ -6,6 +6,7 @@
 package reloj;
 
 import java.awt.Frame;
+import java.time.LocalTime;
 import java.util.Formatter;
 
 /**
@@ -23,8 +24,9 @@ public class RelojFrame {
     public static void main (String [] args)
     {
         
-       
-         r1= new Reloj(23,58,30,1000);
+       LocalTime myObj = LocalTime.now();
+      
+         r1= new Reloj( myObj.getHour(),myObj.getMinute(),myObj.getSecond(),1000);
         r2= new Reloj(12,30,55,1000);
         r3= new Reloj(3,1,1,1000);
         r4= new Reloj(4,1,1,1000);
