@@ -2,3 +2,5 @@ Reloj/build/
 Reloj/dist/
 Reloj/test/
 Reloj/nbproject/
+build.xml
+manifest.mf
